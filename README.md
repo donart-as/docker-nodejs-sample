@@ -1,48 +1,53 @@
-# **Thema:** Erstellen einer ToDo-Applikation mit Markdown, Git, GitHub und Docker
+# Installation des Projekts
 
-In dieser Abschlussaufgabe werden alle erlernten Fähigkeiten in den Bereichen **Markdown**, **Git**, **GitHub** und **Docker** kombiniert. Die Aufgabe besteht darin, eine ToDo-Applikation zu erstellen und diese in einem Docker-Container bereitzustellen.
+## repository Clonen
 
-### **Aufgabenstellung:**
+1. Navigieren Sie auf GitHub zur Hauptseite des Repositorys.
 
-1. **GitHub-Fork erstellen:**
-   - Erstelle einen **Fork** des folgenden GitHub-Repositories: [docker-nodejs-sample](https://github.com/ICT-BLJ/docker-nodejs-sample).
-   - Clone deinen Fork lokal auf deinen Computer.
+2. Klicke oberhalb der Liste der Dateien auf  Code.
 
-2. **Erstellen einer README-Datei in Markdown:**
-   - Erstelle eine **README.md** Datei im Root-Verzeichnis des Projekts.
-   - Die README soll alle Schritte zur **Installation des Projekts** enthalten. Dazu gehören:
-     - Klonen des Repositories
-     - Installation der notwendigen Pakete
-     - Docker-Konfiguration und -Installation
-     - Starten der Applikation in einem Docker-Container
-   - Nutze [Markdown](https://www.markdownguide.org/cheat-sheet/) für die Struktur und Formatierung der Datei.
+![alt text](code-button.webp)
 
-3. **Dokumentation der Vorgehensweise:**
-   - Verfasse eine vollständige **Dokumentation in Word**, in der die Arbeitsschritte beschrieben werden. Diese Schritte sind:
-     - Klonen des Repositories
-     - Einrichtung der Entwicklungsumgebung
-     - Erstellung der README.md
-     - Verwendung von Git (Commit, Push)
-     - Erstellung und Nutzung von Docker-Containern
-   - Verwende die während des Office-Kurses erarbeiteten Kenntnisse für das Erstellen dieses Dokuments.
+3. Kopiere die  SSH URL für das Repository.
 
-4. **Dockerize das Node.js-Projekt:**
-   - Verfolge die Anleitung unter [docs.docker.com](https://docs.docker.com/guides/language/nodejs/containerize/) ab dem Schritt **"Initialize Docker inits"**.
-   - Dein Ziel ist es, das Projekt in einem Docker-Container lauffähig zu machen, sodass am Ende eine **ToDo-Applikation** in einem Docker-Container bereitsteht.
+![alt text](linkkopieren.png)
 
-5. **Git-Workflows:**
-   - Arbeite mit **Git**, um Änderungen regelmäßig zu committen und auf GitHub zu pushen.
-   - Verwende sinnvolle Commit-Nachrichten, um deinen Fortschritt zu dokumentieren.
-   - Stelle sicher, dass dein finaler Stand auf GitHub vorhanden ist.
+4. Öffne Git Bash.
 
-6. **Abgabe:**
-   - **Dokumentation:** Lade die erstellte Word-Dokumentation (inkl. Screenshots und Beschreibung der Schritte) in dein Repository hoch.
-   - **GitHub-Link:** Stelle den Link zu deinem GitHub-Repository bereit, das den finalen Stand des Projekts enthält.
+5. Gib git clone ein, und füge dann die zuvor kopierte URL ein.
 
-### **Ziele der Aufgabe:**
-- Anwendung und Vertiefung von Git und GitHub.
-- Verfassen einer strukturierten Anleitung mit Markdown.
-- Containerisieren einer Node.js-Anwendung mit Docker.
-- Dokumentation des gesamten Prozesses in einem Word-Dokument.
-  
-Viel Erfolg bei der Umsetzung!
+![alt text](gitcloneeingeben.png)
+
+7. Drücke die EINGABETASTE, um den lokalen Klon zu erstellen.
+
+![alt text](entertastedrücken.png)
+
+## Installation der notwendigen Pakete
+
+Bevor man ein paket installiert, sollte man den Anweisungen bei GitHub Packages authentifizieren. Diese Angaben sollte man dafür verwenden:
+
+GITHUB_Token: um Pakete zu veröffentlichen.
+read:Packages: Um Pakete aus anderen privaten Repositories zu installieren.
+
+**Wichtig zu beachten:**
+Man sollte den Anweisungen gemäss des Paketclient beachten bevor man ein Paket installiert.
+
+## Docker konfiguration und -Installation
+
+1. Laden Sie das Installationsprogramm über die oben angezeigte Download-Schaltfläche oder über die Versionshinweise herunter.
+
+2. Führen Sie einen Doppelklick auf Docker Desktop Installer.exe aus, um das Setup zu starten. Docker Desktop wird standardmässig unter C:\Program Files\Docker\Docker installiert.
+
+3. Befolgen Sie die Hinweise des Setup-Assistenten, um das Programm zu autorisieren und den Installationsprozess fortzusetzen.
+
+4. Ist die Installation erfolgreich, klicken Sie auf „Schliessen“, um den Vorgang abzuschliessen.
+
+5. Beim starten des Docker Desktop melden sie sich mit ihren Konto an oder erstellen sie eines.
+
+## Starten der Applikation in einem Docker-Container
+
+1. Starten sie zuerst den Container. (Solang der Container nicht funktioniert wird die website nicht reigeschaltet.)
+
+2. Geben sie auf Google Chrome **Localhost:3000**, um an der Website zu gelangen.
+
+![alt text](websitelocalhost3000.png)
